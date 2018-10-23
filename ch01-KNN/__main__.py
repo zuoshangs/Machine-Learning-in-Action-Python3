@@ -6,7 +6,9 @@ Created on Mon Jul  2 21:18:57 2018
 """
 
 #from numpy import *
-#from Digit_recog import *
+from Digit_recog import *
+from TestData import *
+from Parse_data import *
 
 
 if __name__ == '__main__':
@@ -29,5 +31,5 @@ if __name__ == '__main__':
     testVec = img2vec('digits/testDigits/0_13.txt')
     print(testVec)
     
-    # HandWritingTest('digits/trainingDigits', 'digits/testDigits/')
+    HandWritingTest('digits/trainingDigits', 'digits/testDigits/')
     # 这行代码耗时比较久，可以单独运行
