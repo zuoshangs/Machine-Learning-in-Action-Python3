@@ -9,7 +9,7 @@ def classify(inp_tree, labels, test_vec):
     first_node = list(inp_tree.keys())[0]
     second_dict = inp_tree[first_node]
     index = labels.index(first_node)
-    
+    global class_label
     for key in second_dict.keys():
         if test_vec[index] == key:
             if type(second_dict[key]).__name__ == 'dict':

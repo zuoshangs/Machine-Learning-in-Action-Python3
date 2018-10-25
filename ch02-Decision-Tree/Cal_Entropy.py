@@ -22,8 +22,8 @@ def cal_entropy(data):
     # 最后将概率带入，求出熵
     for key in label_count:
         prob = float(label_count[key]) / entries_num
-        Entropy += prob * math.log(prob, 2) #此处使用numpy.math
-    return (0-Entropy)
+        Entropy -= prob * math.log(prob, 2) #此处使用numpy.math
+    return Entropy
 
 
         

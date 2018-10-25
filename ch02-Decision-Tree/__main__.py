@@ -42,5 +42,7 @@ if __name__ == '__main__':
         lensesLabels=['age','prescript','astigmatic','tearRate']
     
     lense_Tree = Create_Tree(lenses, lensesLabels)
-    #createPlot(lense_Tree)
+    createPlot(lense_Tree)
+    print(classify(myTree,labels, [0, 1]))
+    print(classify(myTree,labels,[1,1]))
     print(classify(lense_Tree, lensesLabels, ['young','hyper','yes','reducedno']))
