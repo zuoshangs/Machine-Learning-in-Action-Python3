@@ -1,6 +1,4 @@
 *.iml
 */__pycache__
-/*/.idea/misc.xml
-/*/.idea/modules.xml
-/*/.idea/libraries/R_User_Library.xml
-/*/.idea/workspace.xml
+/*/.idea/
+/*/*.iml
