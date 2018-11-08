@@ -52,7 +52,7 @@ def colicTest():
         for i in range(21):
             lineArr.append(float(currLine[i]))
         #利用分类预测函数对该样本进行预测，并与样本标签进行比较
-        if(classifyVec(lineArr,trainWeights)!=currLine[21]):
+        if(int(classifyVec(lineArr,trainWeights))!=int(currLine[21])):
             #如果预测错误，错误数加1
             errorCount+=1
     #计算测试集总的预测错误率
